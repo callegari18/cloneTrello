@@ -18,14 +18,14 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-//  Board API Routes
+//  Listas API Routes
 Route::get('boards/{user_id}', 'BoardController@index');
 Route::get('board/{id}/{user_id}', 'BoardController@show');
 Route::post('board/{user_id}', 'BoardController@store');
 Route::put('board/{user_id}', 'BoardController@update');
 Route::delete('board/{id}/{user_id}', 'BoardController@destroy');
 
-//  Task API Routes
+//  Tarefas API Routes
 Route::get('tasks/{user_id}', 'TaskController@index');
 Route::get('task/{id}/{user_id}', 'TaskController@show');
 Route::post('task/{user_id}', 'TaskController@store');

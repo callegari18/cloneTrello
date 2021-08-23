@@ -24,7 +24,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm pad">
+        <nav class="navbar navbar-expand-md navbar-dark bg-black shadow-sm pad">
             <a class="navbar-brand" href="{{ url('/') }}">
                 {{ config('app.name', 'Kanban Board') }}
             </a>
